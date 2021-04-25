@@ -19,7 +19,7 @@ Nessa pasta foram registrados os avanços feitos no curso de Introdução ao Git
    
  - Para atualizar TODAS (por isso o asterisco) as mudanças realizadas.
  
- ``` git commit -m "_Mensagem descritiva do commit_" ```
+ ``` git commit -m "Mensagem descritiva do commit" ```
    
  - Para realizar um commit.
  
@@ -31,7 +31,7 @@ Nessa pasta foram registrados os avanços feitos no curso de Introdução ao Git
  
  - Nomeia o repositório local.
 
- ``` git remote add origin _url repositório remoto_ ```
+ ``` git remote add origin https:urlRepositorioRemoto.com/ ```
  
  - Nomeia o repositório remoto.
  
@@ -39,7 +39,7 @@ Nessa pasta foram registrados os avanços feitos no curso de Introdução ao Git
  
  - Empurra o repositório atualizado da máquina local para a nuvem.
  
- ``` git pull _url repositório remoto_ ```
+ ``` git pull https:urlRepositorioRemoto.com/ ```
  
  - Puxa o repositório da nuvem para a máquina local.
  
