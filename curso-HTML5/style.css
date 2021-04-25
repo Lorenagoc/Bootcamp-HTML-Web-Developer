@@ -1,21 +1,30 @@
 body{
-    background-color:rgba(27, 24, 24, 0.377);
-    font-family: Verdana;
+    background-color:rgb(234, 205, 194);
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 900px;
+    margin: auto;
 }
 
 .top_image {
-    border: 2px solid black;
-    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 3px solid rgba(15, 15, 15, 0.664);
+    border-radius: 500px;
+    width: 30%;
 }
 
-#title, .subtitle, .post_title{
-    color: black;
-    text-shadow: 3px 1px white;
+.subtitle, .post_title{
+    color:rgb(55, 37, 73);
 }
 
 #title {
-    font-size: 40px;
-    text-transform: uppercase;
+    color: rgb(26, 20, 35);
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .a {
@@ -24,16 +33,16 @@ body{
 }
 
 .post_title{
-    font-size: 16px;
-    font-style: italic;
+    font-size: 20px;
+    font-style: normal;
     margin: 0;
     margin-bottom: 15px;
 }
 
 .post {
-    background: white;
+    background: rgb(183, 93, 105);
     padding: 15px;
-    border: 3px solid black;
+    border: 3px solid rgba(15, 15, 15, 0.664);
     margin-bottom: 15px;
     border-radius: 7px;
 }
@@ -42,11 +51,15 @@ body{
     margin: 0;
     margin-bottom: 15px;
     text-transform: capitalize;
+    text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: large;
 }
 
 .post_image {
     margin-bottom: 15px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .contacts_list {
@@ -56,4 +69,5 @@ body{
 
 .contacts_list li a {
     text-decoration: none;
+    color: rgb(26, 20, 35);
 }
