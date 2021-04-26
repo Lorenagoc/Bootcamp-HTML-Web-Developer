@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body { /*Configurações gerais*/
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex; /*Tudo que estiver dentro dele é distribuído em linha*/
+    justify-content: center;
+}
+
+.instagram-wrapper { /*Deixa celular e login no meio da tela*/
+    display: flex;
+    align-items: center; /*Alinhamento vertical*/
+    justify-content: start; /*Alinhamento horizontal da esquerda para a direita*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /*Alinhamento horizontal nesse caso*/
+    justify-content: space-around; /*Alinhamento vertical nesse caso*/
+    flex-direction: column; /*Fica um item em baixo do outro em ordem e os eixos trocam*/
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5rem;
+}
+
+.group:nth-child(1) { /*Seleciona os filhos do elemento*/
+    min-width: 19rem;
+}
+
+.instagram-logo {
+    display: flex;
+}
+
+.instagram-logo img{
+    height: 5rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 20%;
+    border-radius: 50%;
+    padding: 0.2cm;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /*Ao centro com espaço no meio*/
+    align-items: center; /*Alinhado ao centro verticalmente */
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/play-store-button.png');
+}
+
+/*media queries*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        position: relative; /*Tira o scroll da tela*/
+        background-color: white;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none; /*O celular sai para telas de celular*/
+    }
+
+    .instagram-continue {
+        overflow: hidden;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+
+    .profile-photo img {
+        width: 50%;
+    }
+
+    .download {
+        width: auto;
+    }
+
+    .app-download {
+        border: 2px solid white;
+    }
+}
