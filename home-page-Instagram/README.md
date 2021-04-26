@@ -9,4 +9,4 @@ Interface em desktop:
 
 Interface em mobile:
 
-![](img/screen-mobile.png)
+![](img/mobile-screen.png)
