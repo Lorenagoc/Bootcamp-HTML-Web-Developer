@@ -1,3 +1,39 @@
+:root { /*define variaveis na raiz do codigo*/
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* { /*configurações reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
 body {
-    background-color: blue;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*parametro default*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-between; /*alinhamento horizontal*/
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover { /*toda vez que o mouse passar em cima das ancoras*/
+    color: #fff; /*muda a cor*/
 }
