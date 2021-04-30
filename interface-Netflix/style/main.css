@@ -9,9 +9,11 @@
     box-sizing: border-box;    
 }
 
+/*elementos da base*/
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -36,4 +38,25 @@ header nav a {
 
 header nav a:hover { /*toda vez que o mouse passar em cima das ancoras*/
     color: #fff; /*muda a cor*/
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    /*linear-gradiente: cria uma camada fina em cima da imagem*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/interface-Netflix/img/capa-dark.jpg");
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*muda a direcao do alinhamento*/
+    justify-content: center; /*alinhamento vertical, nesse caso*/
+    align-items: flex-start; /*alinhamento horizontal, nesse caso*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
 }
