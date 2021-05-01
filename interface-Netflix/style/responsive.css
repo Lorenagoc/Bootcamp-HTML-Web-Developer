@@ -1,0 +1,19 @@
+/*quando a tela tem ate 700px*/
+@media screen and (max-width:700px) {
+    header .container { /*coloca o menu para baixo do titulo*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px; /*para desgrudar os botoes*/
+        width: 190px;
+    }
+}
+
+/*quando a tela tem no minimo 1000px*/
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
