@@ -91,3 +91,9 @@ header nav a:hover { /*toda vez que o mouse passar em cima das ancoras*/
 .filme-principal .container { /*Altera apenas o container da classe filme-principal*/
     width: 70%; /*Para o texto não ultrapassar a tela*/
 }
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
