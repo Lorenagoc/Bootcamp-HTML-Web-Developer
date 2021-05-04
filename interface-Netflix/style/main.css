@@ -101,7 +101,3 @@ header nav a:hover { /*toda vez que o mouse passar em cima das ancoras*/
 .carrossel-filmes {
     margin-top: 5px;
 }
-
-.carrossel-filmes .item a:hover {
-    margin: auto;
-}
