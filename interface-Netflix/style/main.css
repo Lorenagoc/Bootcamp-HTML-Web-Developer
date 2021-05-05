@@ -101,3 +101,7 @@ header nav a:hover { /*toda vez que o mouse passar em cima das ancoras*/
 .carrossel-filmes {
     margin-top: 5px;
 }
+
+.carrossel-filmes .item a img:hover {
+ cursor: pointer; /*ponteiro muda quando o mouse passa em cima da imagem*/
+}
