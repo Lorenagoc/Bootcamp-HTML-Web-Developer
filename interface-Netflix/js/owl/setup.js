@@ -15,7 +15,3 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-
-function redirecionar() {
-    window.open("https://dark.netflix.io/pt"); //abre em outra aba o site oficial da serie dark
-}
