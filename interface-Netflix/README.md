@@ -6,3 +6,5 @@ Prints do projeto:
 ![](img/Screenshot_2021-05-04_21-11-35.png)
 
 ![](img/Screenshot_2021-05-04_21-12-12.png)
+
+![](img/netflix-page.gif)
