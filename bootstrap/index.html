@@ -9,32 +9,74 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Minha página</title>
 </head>
+<nav class="navbar navbar-expand-lg navbar-light margin">
+    <a class="navbar-brand" href="#">
+        <img src="img/global-labs.png" width="237" height="77.5">
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#quemSomos">Quem somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#parceiros">Parceiros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#servicos">Serviços</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="img/global-labs.png" width="237" height="77.5">
-        </a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Quem somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Parceiros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Serviços</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<section id="quemSomos">
+    <div class="container-fluid quemSomos text-center margin">
+        <h3 class="margin">Quem somos</h3>
+        <img src="img/time.jpg" class="rounded-circle" width="400" height="400">
+        <h3 class="margin">Somos um time comprometido com os resultados</h3>
+    </div>
+</section>
 
-    <section id="quemSomos">
-        <div class="container-fluid quemSomos text-center margin">
-            <p>Teste</p>
+<selection id="parceiros">
+    <div class="container-fluid text-center margin parceiros">
+        <h3 class="margin">Parceiros</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/dio.png" width="100%">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/dio.png" width="100%">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/dio.png" width="100%">
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</selection>
+
+<section id="servicos">
+    <div class="container-fluid text-center margin servicos">
+        <h3 class="margin">Serviços</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa
+                        peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos.</p>
+                    <img src="img/app.jpg" width="100%">
+                </div>
+                <div class="col-lg-6">
+                    <p>Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma
+                        das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum</p>
+                    <img src="img/site1.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="container-fluid text-center bg-footer margin">
+    <p>Desenvolvido por Lorena Gomes</p>
+</footer>
 </body>
 
 </html>
