@@ -44,10 +44,10 @@ function update(event) {
 function iniciarJogo() {
     /*PARA A COBRINHA NAO SUMIR DA TELA*/
     //ela ira aparecer do outro lado da tela
-    if(snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
-    if(snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
-    if(snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
-    if(snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
+    if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
+    if (snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
+    if (snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
+    if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
 
     /*-------------------------- chama funcoes --------------------------*/
     criarBG();
@@ -58,13 +58,22 @@ function iniciarJogo() {
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
-    /*pra que onde vai a cobrinha?*/
+    /*-------------------------- pra que onde vai a cobrinha? --------------------------*/
     if (direction == "right") snakeX += box; //acrescenta um quadradinho
     if (direction == "left") snakeX -= box; //decrementa um quadradinho
     if (direction == "up") snakeY -= box;
     if (direction == "down") snakeY += box;
 
-    snake.pop(); //retira o ultimo elemento do array
+    /*-------------------------- COMENDO A COMIDA (OU NAO) --------------------------*/
+    //se a posicao da cobra e diferente da posicao da comida o ultimo elemento da cobrinha e retirado
+    if (snakeX != food.x || snakeY != food.y) {
+        snake.pop(); //retira o ultimo elemento do array
+    }
+    else {
+        //recebe uma nova posicao aleatoria
+        food.x = Math.floor(Math.random() * 15 + 1) * box;
+        food.y = Math.floor(Math.random() * 15 + 1) * box;
+    }
 
     let newHead = {
         x: snakeX,
@@ -72,6 +81,9 @@ function iniciarJogo() {
     }
 
     snake.unshift(newHead); //insere um elemento no comeco do array
+
+    /*snake.pop() e snake.unshit() da a sensacao de movimento da cobra pois tira um elemento da calda e coloca
+    na cabeca*/
 }
 
 let jogo = setInterval(iniciarJogo, 100); //a cada 100ms a funcao sera renovada
