@@ -7,6 +7,12 @@ snake[0] = { //tamanho inicial
     y: 8 * box
 }
 let direction = "right";
+//Math.floor retorna o menor numero inteiro (retira a parte flutuante)
+//Math.random retorna um numero aleatorio ate 1
+let food = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+}
 
 function criarBG() {
     context.fillStyle = "lightgreen"; //cor do background do canvas
@@ -18,6 +24,11 @@ function criarCobrinha() {
         context.fillStyle = "green"; //cor da cobra
         context.fillRect(snake[i].x, snake[i].y, box, box); //posicao inicial da cobra
     }
+}
+
+function criarComida() {
+    context.fillStyle = "red"; //cor da comida
+    context.fillRect(food.x, food.y, box, box); //posicoes da comida
 }
 
 document.addEventListener('keydown', update); //capta os cliques nos botoes do teclado e chama a funcao update
@@ -38,10 +49,12 @@ function iniciarJogo() {
     if(snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
     if(snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
 
+    /*-------------------------- chama funcoes --------------------------*/
     criarBG();
     criarCobrinha();
+    criarComida();
 
-    /*ponto de partida*/
+    /*-------------------------- ponto de partida --------------------------*/
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
