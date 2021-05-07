@@ -20,6 +20,16 @@ function criarCobrinha() {
     }
 }
 
+document.addEventListener('keydown', update); //capta os cliques nos botoes do teclado e chama a funcao update
+
+function update(event) {
+    //a direcao da cobrinha nao pode ser a oposta pois ela so tem uma cabeca
+    if (event.keyCode == 37 && direction != "right") direction = "left";
+    if (event.keyCode == 38 && direction != "down") direction = "up";
+    if (event.keyCode == 39 && direction != "left") direction = "right";
+    if (event.keyCode == 40 && direction != "up") direction = "down";
+}
+
 function iniciarJogo() {
     criarBG();
     criarCobrinha();
@@ -29,7 +39,7 @@ function iniciarJogo() {
     let snakeY = snake[0].y;
 
     /*pra que onde vai a cobrinha?*/
-    if (direction == "rigth") snakeX += box; //acrescenta um quadradinho
+    if (direction == "right") snakeX += box; //acrescenta um quadradinho
     if (direction == "left") snakeX -= box; //decrementa um quadradinho
     if (direction == "up") snakeY -= box;
     if (direction == "down") snakeY += box;
