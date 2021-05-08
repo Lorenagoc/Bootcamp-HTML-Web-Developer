@@ -9,4 +9,5 @@ Conteúdo abordado:
  - Parte V: Listas de navegação com imagens.
  - Parte VI: Listas de navegação dentro de containers utilizando imagens.
   
-  ![](img/bootstrap-page.gif)
+![](img/quem-somos.gif)
+![](img/parceiros-servicos.png)
